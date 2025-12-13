@@ -16,9 +16,9 @@ We see that NBA viewership peaked around the year 1998-1999 (graph from Wikipedi
 
 Truth be told, the decline in NBA viewership is due to many of the issues we've mentioned above; it could be all of them. It is the amalgamation of these factors that creates the question: What can the NBA do to increase viewership? 
 
-It is a very complex question, but we think it's a simple formula:
+It is a very complex question, but I think it's a simple formula:
 
-- Enhance TV/streaming viewrship experiences (more camera angles, Social Media exclusive NBA edits, extended interview cuts)
+- Enhance TV/streaming viewrship experiences (more camera angles, Social Media exclusivity deals for NBA videos/edits, extended interview cuts)
 
 - Up the stakes during the season/offseason. This has been done with the introduction of the NBA cup; however, if the NBA cup took place over the summer months, which showcased players who did not get enough rotation time, it could be more interesting to watch (with prizes such as increased draft lottery odds, minor schedule changes, etc). 
 
