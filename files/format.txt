@@ -1,2 +1,2 @@
 The CSV file contains scrapped data from a wikipedia 
-dataset. it has been cleaned and the numbers shown for viewership are in the thousands (adjusted to int, many thousands = millions, friendly reminder :) )
+dataset. It has been cleaned and the numbers shown for viewership are in the thousands (adjusted to int, many thousands = millions, friendly reminder :) )
