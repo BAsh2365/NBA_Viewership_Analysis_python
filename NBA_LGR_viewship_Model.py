@@ -6,12 +6,19 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (classification_report, confusion_matrix, 
                              roc_auc_score, roc_curve, f1_score)
+from sklearn.impute import SimpleImputer
 
 df = pd.read_csv('nba_finals_ratings_CLEAN.csv')
+
+viewership_cols = [col for col in df.columns if 'Viewers' in col]
+df[viewership_cols] = df[viewership_cols] * 1000 #Convert to millions
+
+print(df.head()) #Checking data 
 
 median = df['Average_Viewers'].median()
 df['High_Viewership'] = (df['Average_Viewers'] >= median).astype(int)
 
+# Fix regex warning with r''
 df['Series_Length'] = df['Results'].str.extract(r'(\d)-(\d)').sum(axis=1)
 df['Was_Sweep'] = df['Results'].str.contains('4-0').astype(int)
 df['Went_7_Games'] = df['Results'].str.contains('4-3').astype(int)
@@ -32,6 +39,7 @@ for idx, row in df.iterrows():
                 'High_Viewership': 1 if row[f'Game_{game_num}_Viewers'] >= median else 0
             })
 
+
 games_df = pd.DataFrame(games)
 games_df = games_df.merge(
     df[['Year', 'Series_Length', 'Was_Sweep', 'Went_7_Games', 'Avg_Game_Viewership_Variance']],
@@ -46,17 +54,24 @@ X = games_df[[
     'Went_7_Games',
     'Was_Sweep',
     'Avg_Game_Viewership_Variance'
-]].fillna(0)
+]]
 
 y = games_df['High_Viewership']
 
+imputer = SimpleImputer(strategy='mean')
+X = pd.DataFrame(imputer.fit_transform(X), columns=X.columns) #Filling in Missing values, Doesn't change the prediction too much
+#https://scikit-learn.org/stable/modules/impute.html
+
+
+# Split first
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
 
-
+# Scale after split
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
+# Use class_weight instead of SMOTE
 L_G_R = LogisticRegression(
     max_iter=1000,
     class_weight='balanced',  # Handles imbalance
@@ -105,3 +120,4 @@ plt.title('Feature Importance (Logistic Regression)')
 plt.axvline(x=0, color='red', linestyle='--', linewidth=1)
 plt.tight_layout()
 plt.show()
+
