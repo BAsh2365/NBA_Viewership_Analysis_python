@@ -12,7 +12,7 @@ Interestingly, the length of the series has a negative effect on viewership, whi
 
 Well, the answer points us back to our average viewership variance, which is a nuanced variable. This nuance includes the context of the NBA finals, the storylines (as mentioned above), the team structure, records, seeding, etc. So while it may look like series length has a less-than-ideal effect on the prediction, you have to remember that the variable itself is context-averse. 
 
-We see that NBA viewership peaked around the year 1998-1999 (graph from Wikipedia) (around the time of Jordan's final stretch with the Bulls, leading to 6 rings after a series win over the Utah Jazz) and has decreased ever since that time period, despite the influx of talent from 2000-2024. Some attribute the majority of NBA ratings to Michael Jordan and his popularity in the 90s, pre-dating social media.
+We see that NBA viewership peaked around the year 1998-1999 (graph from Wikipedia) (around the time of Jordan's final stretch with the Bulls, leading to 6 rings after a series win over the Utah Jazz) and has decreased ever since that time period, despite the influx of talent from 2000 to 2024. Some attribute the majority of NBA ratings to Michael Jordan and his popularity in the 90s, pre-dating social media.
 
 Truth be told, the decline in NBA viewership is due to many of the issues we've mentioned above; it could be all of them. It is the amalgamation of these factors that creates the question: What can the NBA do to increase viewership? 
 
@@ -53,5 +53,15 @@ https://medium.com/learning-data/which-machine-learning-algorithm-should-i-use-f
 
 https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/ (potential usage with Oversampling if needed for larger-scale data)
 
+https://www.lightly.ai/blog/f1-score
+
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html
+
+https://www.rpubs.com/sleepysloth12/1174517
+
+https://scikit-learn.org/stable/modules/impute.html
+
 Use of Claude 4.5 sonnet for data collection from https://en.wikipedia.org/wiki/NBA_Finals_television_ratings and model debugging
+
+
 
