@@ -28,7 +28,7 @@ Hope you all enjoyed this analysis!
 
 
 
-# ROC curve and Feature Importance Plots
+# ROC curve, precision/accuracy, Feature Importance Plots
 
 
 <img width="800" height="600" alt="Updated ROC curve after adjustment" src="https://github.com/user-attachments/assets/cb72c10e-a12f-4665-a019-85f2bc0d05be" />
@@ -37,6 +37,10 @@ Updated: Normalized values and filled in zeroes with Sklearn imputer, results do
 
 
 <img width="1000" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/31f32dd6-ac9a-4a61-bf0f-71a8495a8e13" />
+
+
+<img width="541" height="245" alt="image" src="https://github.com/user-attachments/assets/879bcdd7-9486-40ff-8501-e31abd737df7" />
+
 
 
 # Resources
