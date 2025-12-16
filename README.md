@@ -4,7 +4,7 @@ Analyzing viewership Data in the NBA to see what factors influence fan engagemen
 # Analysis
 When discussing the decline of NBA viewership over the past 2-3 decades, many note that this issue is a result of many factors, such as the over-monetization of the league (sponsorships, TV deals, streaming, etc), the decrease in NBA rivalries, and "tenacity" the league used to have, the introduction of social media highlight reels for the best plays, or even generational shifts in viewership from the Jordan era vs the Lebron era vs the new era (Shai, Victor Wenbanyama, Luka, etc).
 
-When analyzing the data on NBA finals matchups from 1987-2024 (data taken from a Wikipedia dataset), we can infer and observe the data shown to predict why a viewer will tune into a finals matchup.
+When analyzing the data on NBA finals matchups from 1987 to 2024 (data taken from a Wikipedia dataset), we can infer and observe the data shown to predict why a viewer will tune into a finals matchup.
 
 What we see is that the average viewership variance (confounding factors that drive up viewership on a game-by-game basis, potentially based on other outside variables such as MVP predictions, team storylines, etc) is one of the positive, driving factors for someone to tune into the NBA finals, followed by the game number. 
 
@@ -30,7 +30,10 @@ Hope you all enjoyed this analysis!
 
 # ROC curve and Feature Importance Plots
 
-<img width="800" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/fed369b1-d304-4f06-a984-4a6a2ede59e6" />
+
+<img width="800" height="600" alt="Updated ROC curve after adjustment" src="https://github.com/user-attachments/assets/cb72c10e-a12f-4665-a019-85f2bc0d05be" />
+
+Updated: Normalized values and filled in zeroes with Sklearn imputer, results don't change
 
 
 <img width="1000" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/31f32dd6-ac9a-4a61-bf0f-71a8495a8e13" />
